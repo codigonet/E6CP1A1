@@ -3,7 +3,12 @@
 
 a = ''
 10.times do |i|
-	
+	a << (i + 1).to_s
+	if (i + 1).even?
+		a << 'par '
+	else
+		a << 'impar '
+	end
 end
 
 puts a

@@ -24,3 +24,14 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+puts '<table>'
+puts ' <tbody>'
+for i in 1..3 do
+  puts '  <tr>'
+  4.times do |x|
+    puts "    <td> #{x + 1} </td>"
+  end
+  puts '  </tr>'
+end
+puts ' </tbody>'
+puts '</table>'
